@@ -1,10 +1,9 @@
 {
-	"asjdhk": {
-		"created": "",
-		"updated": "",
+	"/blog-posts/master/nodejs/test1.md": {
+		"created": "Tue Nov 25 2014 12:53:18 GMT+0200 (IST)",
+		"updated": "Tue Nov 25 2014 12:53:18 GMT+0200 (IST)",
 		"auhor": {},
 		"tags": ["Node", "fs"],
-		"alias": "",
-		"path": ""
+		"url": "http://wwww.nodeside.com"
 	}
 }
