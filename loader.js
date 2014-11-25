@@ -1,6 +1,30 @@
 
-loadTagsFile(function(response) {
-	console.log(response);
+loadTagsFile(function(files) {
+
+	for (var file in files) {
+
+		//For Tags		
+		var tagContainer = document.getElementsByClassName('post-tags '+file)[0];
+
+		for (var tag in files[file].tags) {			
+			var tagElement = document.createElement('div')
+			tagElement.className = 'label';
+			tagElement.innerHTML = files[file].tags[tag];			
+			tagContainer.appendChild(tagElement);
+		}
+// //<span>4/10/13</span><span>18:30</span>
+
+// 		var dateContainer = document.getElementsByClassName('post-datetime '+file)[0];
+// 		var date = new Date(files[file].created);
+// 		//need to add datetimelater
+
+// 		var dateString = date.getDay()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
+
+// 		var dateElement = document.createElement('span')		
+// 		dateElement.innerHTML = dateString;			
+// 		dateContainer.appendChild(tagElement);		
+
+	}
 });
 
 loadPosts();
