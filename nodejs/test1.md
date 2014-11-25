@@ -8,8 +8,7 @@ asd
 as
 das
 
-<script src="https://gist.github.com/ellman/2c5b95ee35de1446df95.js"></script>
-
+<div class="gist-loader" id="ellman/8581469"></div>
 d
 asd
 as
