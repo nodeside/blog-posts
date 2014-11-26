@@ -36,8 +36,9 @@ function loadLatestPosts() {
 	loadTagsFile(function(files){
 		var filesHolder = [];
 		for (var file in files) {
-			filesHolder.push(file)
+			filesHolder.push(file);
 		}
+		console.log(filesHolder);
 		var sortedFiles = filesHolder.sort(dateSort(a,b));
 		var iterations = 5;
 		if(sortedFiles.length < 5) { iterations = sortedFiles.length}
