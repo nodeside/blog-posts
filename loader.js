@@ -15,16 +15,41 @@ loadTagsFile(function(files) {
 
 		var dateContainer = document.getElementsByClassName('post-datetime '+file)[0];
 		var date = new Date(files[file].created);
-		var dateString = date.getHours()+':'+date.getMinutes()+' on '+date.getDay()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
-		var dateElement = document.createElement('span')
+		var dateString = date.getDay()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
+		var timeString = date.getHours()+':'+date.getMinutes();
+		var dateElement = document.createElement('span');
 		dateElement.innerHTML = dateString;
 		dateContainer.appendChild(dateElement);
+		dateContainer.appendChild(document.createElement('br'));
+		var timeElement = document.createElement('span');
+		timeElement.innerHTML = timeString;
+		dateContainer.appendChild(timeElement);
 
 	}
 });
 
 loadPosts();
+loadLatestPosts();
+//homes.sort(function(a,b) { return parseFloat(a.price) - parseFloat(b.price) } );
+function loadLatestPosts() {
+	console.log("latest tags");
+	loadTagsFile(function(files){
+		var filesHolder = [];
+		for (var file in files) {
+			filesHolder.push(file)
+		}
+		var sortedFiles = filesHolder.sort(dateSort(a,b));
+		var iterations = 5;
+		if(sortedFiles.length < 5) { iterations = sortedFiles.length}
+		for (var i=0; i<iterations; i++){
+			loadRawFile(sortedFiles[i]);
+		}
+	});
+}
 
+function dateSort(a, b){
+	return new Date(b.created).getTime() - new Date(a.created).getTime();
+}
 function loadPosts() {
 	var posts = document.getElementsByClassName('embed-blog-post');
 
@@ -86,7 +111,7 @@ function loadTagsFile(callback) {
 function loadRawFile(element) {
 	get(element.id, function(xhr){
 
-		var post = document.createElement('div')
+		var post = document.createElement('div');
 
 		post.innerHTML = xhr.responseText;
 
