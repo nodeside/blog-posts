@@ -12,17 +12,13 @@ loadTagsFile(function(files) {
 			tagElement.innerHTML = files[file].tags[tag];			
 			tagContainer.appendChild(tagElement);
 		}
-// //<span>4/10/13</span><span>18:30</span>
 
-// 		var dateContainer = document.getElementsByClassName('post-datetime '+file)[0];
-// 		var date = new Date(files[file].created);
-// 		//need to add datetimelater
-
-// 		var dateString = date.getDay()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
-
-// 		var dateElement = document.createElement('span')		
-// 		dateElement.innerHTML = dateString;			
-// 		dateContainer.appendChild(tagElement);		
+		var dateContainer = document.getElementsByClassName('post-datetime '+file)[0];
+		var date = new Date(files[file].created);
+		var dateString = date.getHours()+':'+date.getMinutes()+' on '+date.getDay()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
+		var dateElement = document.createElement('span')
+		dateElement.innerHTML = dateString;
+		dateContainer.appendChild(dateElement);
 
 	}
 });
