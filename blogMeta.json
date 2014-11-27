@@ -44,14 +44,14 @@
   {
     "title" : "Add mongodb database users",
     "url" : "/security/users/add",
-    "name" : "/security/users/add",
+    "name" : "/security_users_add",
     "tags" : "security, users, passwords, authentication, mongodb",
     "created" : "01/20/2013 21:01"
   },
   {
     "title" : "How to restrict access to specific ip addresses (bind_ip)",
     "url" : "/security/bind_ip",
-    "name" : "/security/bind_ip",
+    "name" : "/security_bind_ip",
     "tags" : "security, bind_ip, mongodb",
     "created" : "01/20/2013 20:01"
   },
