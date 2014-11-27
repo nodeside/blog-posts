@@ -2,6 +2,7 @@
   "/blog-posts/master/nodejs/test1.md": {
 	"created": "Tue Nov 25 2014 12:53:18 GMT+0200 (IST)",
 	"updated": "Tue Nov 25 2014 12:53:18 GMT+0200 (IST)",
+	"title": "Post 1",
 	"author": {},
 	"tags": ["Node", "fs"],
 	"url": "http://wwww.nodeside.com"
@@ -9,6 +10,7 @@
   "/blog-posts/master/nodejs/test2.md": {
 	"created": "Tue Nov 26 2014 12:53:18 GMT+0200 (IST)",
 	"updated": "Tue Nov 26 2014 12:53:18 GMT+0200 (IST)",
+	"title": "Post 2",
 	"author": {},
 	"tags": ["Node", "fs"],
 	"url": "http://wwww.nodeside.com"
@@ -16,6 +18,7 @@
   "/blog-posts/master/nodejs/test3.md": {
 	"created": "Tue Nov 27 2014 12:53:18 GMT+0200 (IST)",
 	"updated": "Tue Nov 27 2014 12:53:18 GMT+0200 (IST)",
+	"title": "Post 3",
 	"author": {},
 	"tags": ["Node", "fs"],
 	"url": "http://wwww.nodeside.com"
