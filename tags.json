@@ -7,7 +7,7 @@
 	"tags": ["map reduce", "mongodb"],
 	"url": "http://blog.nodeside.com/mongodb-map-reduce-explained"
   },
-  "/nodejs-callbacks-explained.md": {
+  "/blog-posts/master/nodejs/nodejs-callbacks-explained.md": {
         "created": "2013-08-27 02:03:00 +0300",
         "updated": "2013-08-27 02:03:00 +0300",
         "title": "Nodejs Callbacks Explained",
