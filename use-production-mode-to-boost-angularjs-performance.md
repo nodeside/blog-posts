@@ -1,5 +1,5 @@
 
-You have probably heard a lot of talk about anglular 1.3 performance improvement sand have heard stats such as "4.3x DOM manipulation faster with 73% less garbage". Thats all very well and good but lets have a look at one feature you can use today to give your app a performance boost.
+You have probably heard a lot of talk about anglular 1.3 performance improvements and have heard stats such as "4.3x faster DOM manipulation with 73% less garbage" etc. Thats all very well and good but lets have a look at one feature you can use today to give your app a performance boost.
 
 <h2>Production mode</h2>
 
@@ -23,8 +23,5 @@ Anything that is logged using $log, can be disabled by adding this simple line t
 $logProvider.debugEnabled(false);
 
 <div class='git-loader' id='rafaelb/23b078ab489944d5a5e0'/>
-
-
-
 
 We suggest having a look at the official angular docs version 1.3 for additional informaiton on performance improvemtns
