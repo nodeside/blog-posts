@@ -1,4 +1,11 @@
-[
+[ {
+  "title":"Use production mode to boost angularjs performance",
+  "url" : "use-production-mode-to-boost-angularjs-performance",
+  "name":"blog-posts/use-production-mode-to-boost-angularjs-performance.md",
+  "tags":"angular",
+  "created":"28/02/2015"
+  
+  },
   {
     "title" : "Find which process is running on a port using netstat and lsof",
     "url" : "/which-process-is-using-port-netstat",
